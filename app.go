@@ -19,7 +19,6 @@ import (
 	"github.com/gen2brain/beeep"
 	"github.com/wailsapp/wails/v2/pkg/runtime"
 	"golang.design/x/clipboard"
-	"tailscale.com"
 	"tailscale.com/client/tailscale"
 	"tailscale.com/client/tailscale/apitype"
 	"tailscale.com/ipn"
@@ -57,7 +56,7 @@ var iconPath = func() string {
 
 		return ""
 	}
-}()
+}
 
 func Start() Tailscaled {
 err:
